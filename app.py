@@ -67,7 +67,7 @@ try:
         fig, ax = plt.subplots()
 
             # Menampilkan titik data aktual (tahun vs penjualan)
-        ax.plot(X, Y, 'o-', label='Data Aktual')
+        ax.plot(X, Y, 'o-', label=' Aktual')
 
             # Menampilkan garis regresi (garis prediksi)
         ax.plot(x_plot, y_plot, 'r--', label='Regresi Linear')
