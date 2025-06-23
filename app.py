@@ -82,4 +82,4 @@ if menu == "Model Matematika Lainnya":
 
     except:
         # Menangani kesalahan input jika user salah format angka/koma
-        st.error("Pastikan input berupa angka dan dipisahkan dengan koma."
+        st.error("Pastikan input berupa angka dan dipisahkan dengan koma.")
