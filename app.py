@@ -67,7 +67,7 @@ try:
         fig, ax = plt.subplots()
 
             # Menampilkan titik data aktual (tahun vs penjualan)
-        ax.plot(X, Y, 'o-', label=' Aktual')
+        ax.plot(X, Y, 'o-', label='Data Aktual')
 
             # Menampilkan garis regresi (garis prediksi)
         ax.plot(x_plot, y_plot, 'r--', label='Regresi Linear')
@@ -76,7 +76,7 @@ try:
         ax.axvline(tahun_pred, color='gray', linestyle='--', label='Tahun Prediksi')
 
             # Menandai hasil prediksi dengan garis horizontal
-        ax.axhline(prediksi, color='green', linestyle=':', label='Prediksi')
+        ax.axhline(prediksi, final_cost color='green', linestyle=':', label='Prediksi')
 
             # Memberi label sumbu dan legend
         ax.set_xlabel("Tahun")
