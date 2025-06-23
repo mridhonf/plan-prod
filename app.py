@@ -40,52 +40,52 @@ try:
 
             # Menggunakan numpy.polyfit untuk mencari garis regresi linear: y = b*x + a
         coef = np.polyfit(X, Y, 1)  # coef[0] = b (slope), coef[1] = a (intercept)
-          a, b = coef[1], coef[0]     # assign agar lebih mudah dibaca
+        a, b = coef[1], coef[0]     # assign agar lebih mudah dibaca
 
             # Input tahun yang ingin diprediksi
-          tahun_pred = st.number_input("Prediksi permintaan untuk tahun:", value=2025)
+        tahun_pred = st.number_input("Prediksi permintaan untuk tahun:", value=2025)
 
             # Menghitung hasil prediksi menggunakan rumus regresi: y = a + b*x
-          prediksi = a + b * tahun_pred
+        prediksi = a + b * tahun_pred
             #Menghitung Harga Jual
-            final_cost = cost * prediksi
+        final_cost = cost * prediksi
             # Menampilkan hasil prediksi ke user
-           st.success(f"Prediksi permintaan untuk tahun {tahun_pred}: {prediksi:.0f} unit")
+        st.success(f"Prediksi permintaan untuk tahun {tahun_pred}: {prediksi:.0f} unit")
             
-           st.success(f"Total Biaya Untuk Tahun {tahun_pred} : Rp. {final_cost}")
+        st.success(f"Total Biaya Untuk Tahun {tahun_pred} : Rp. {final_cost}")
 
             # ==========================
             # Visualisasi Garis Regresi
             # ==========================
 
             # Membuat array tahun untuk digambar di grafik (lebih rapat agar garis halus)
-           x_plot = np.linspace(min(X)-1, max(X)+2, 100)
+        x_plot = np.linspace(min(X)-1, max(X)+2, 100)
 
             # Menghitung nilai y (penjualan) berdasarkan garis regresi
-           y_plot = a + b * x_plot
+        y_plot = a + b * x_plot
 
             # Membuat grafik
-           fig, ax = plt.subplots()
+        fig, ax = plt.subplots()
 
             # Menampilkan titik data aktual (tahun vs penjualan)
-           ax.plot(X, Y, 'o-', label='Data Aktual')
+        ax.plot(X, Y, 'o-', label='Data Aktual')
 
             # Menampilkan garis regresi (garis prediksi)
-           ax.plot(x_plot, y_plot, 'r--', label='Regresi Linear')
+        ax.plot(x_plot, y_plot, 'r--', label='Regresi Linear')
 
             # Menandai tahun prediksi dengan garis vertikal
-           ax.axvline(tahun_pred, color='gray', linestyle='--', label='Tahun Prediksi')
+        ax.axvline(tahun_pred, color='gray', linestyle='--', label='Tahun Prediksi')
 
             # Menandai hasil prediksi dengan garis horizontal
-           ax.axhline(prediksi, color='green', linestyle=':', label='Prediksi')
+        ax.axhline(prediksi, color='green', linestyle=':', label='Prediksi')
 
             # Memberi label sumbu dan legend
-           ax.set_xlabel("Tahun")
-           ax.set_ylabel("Jumlah Terjual (unit)")
-           ax.legend()
+        ax.set_xlabel("Tahun")
+        ax.set_ylabel("Jumlah Terjual (unit)")
+        ax.legend()
 
             # Menampilkan grafik di Streamlit
-           st.pyplot(fig)
+        st.pyplot(fig)
 
 except:
         # Menangani kesalahan input jika user salah format angka/koma
