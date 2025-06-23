@@ -15,10 +15,10 @@ st.write("Memprediksi permintaan motor di masa depan menggunakan regresi linear 
 
     # Formulir input data historis penjualan
 st.markdown("Masukkan data historis penjualan:")
-    # Input tahun-tahun historis, dipisahkan koma
-years = st.text_input("Tahun-tahun (pisahkan dengan koma)", "2019,2020,2021,2022,2023")
     # Masukan Harga 1 Unit Motor
 harga = st.number_input("Masukan Harga 1 Unit Motor :", value=0)
+    # Input tahun-tahun historis, dipisahkan koma
+years = st.text_input("Tahun-tahun (pisahkan dengan koma)", "2019,2020,2021,2022,2023")
     # Input data penjualan per tahun yang sesuai
 sales = st.text_input("Jumlah terjual per tahun (unit)", "2000,2200,2500,2700,3000")
 
