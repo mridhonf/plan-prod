@@ -77,6 +77,8 @@ try:
 
             # Menandai hasil prediksi dengan garis horizontal
         ax.axhline(prediksi, color='green', linestyle=':', label='Prediksi')
+            # Menambahkan Harga
+        ax.plot('Biaya : ', final_cost)
 
             # Memberi label sumbu dan legend
         ax.set_xlabel("Tahun")
