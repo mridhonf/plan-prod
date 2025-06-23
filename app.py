@@ -6,8 +6,7 @@ from pulp import LpMaximize, LpProblem, LpVariable
 
 
 # ========== MENU 4: MODEL LAINNYA ==========
-if == "Model Matematika Lainnya":
-    # Menampilkan judul halaman menu
+
     st.title("Model Proyeksi Permintaan Motor")
 
     # Deskripsi singkat model
