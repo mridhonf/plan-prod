@@ -9,7 +9,7 @@ from pulp import LpMaximize, LpProblem, LpVariable
 
 st.set_page_config(page_title="Aplikasi Model Industri Motor", layout="wide")
 
-    st.title("Model Proyeksi Permintaan Motor")
+st.title("Model Proyeksi Permintaan Motor")
 
     # Deskripsi singkat model
     st.write("Memprediksi permintaan motor di masa depan menggunakan regresi linear sederhana.")
