@@ -1,5 +1,5 @@
 # ========== MENU 4: MODEL LAINNYA ==========
-elif menu == "Model Matematika Lainnya":
+if menu == "Model Matematika Lainnya":
     # Menampilkan judul halaman menu
     st.title("Model Proyeksi Permintaan Motor")
 
