@@ -7,7 +7,6 @@ from pulp import LpMaximize, LpProblem, LpVariable
 
 # ========== MENU 4: MODEL LAINNYA ==========
 
-st.set_page_config(page_title="Aplikasi Model Industri Motor", layout="wide")
 
 st.title("Model Proyeksi Permintaan Motor")
 
