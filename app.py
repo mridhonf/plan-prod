@@ -1,5 +1,12 @@
+import streamlit as st
+import numpy as np
+import matplotlib.pyplot as plt
+from scipy.optimize import linprog
+from pulp import LpMaximize, LpProblem, LpVariable
+
+
 # ========== MENU 4: MODEL LAINNYA ==========
-if menu == "Model Matematika Lainnya":
+if == "Model Matematika Lainnya":
     # Menampilkan judul halaman menu
     st.title("Model Proyeksi Permintaan Motor")
 
