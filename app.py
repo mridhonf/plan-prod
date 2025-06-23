@@ -31,15 +31,15 @@ try:
     Y = np.array([int(y) for y in sales.split(",")])
 
         # Mengecek apakah panjang data tahun dan penjualan cocok
-     if len(X) != len(Y):
+    if len(X) != len(Y):
             st.error("Jumlah tahun dan data penjualan harus sama.")
-     else:
+    else:
             # ==========================
             # Proses Regresi Linear
             # ==========================
 
             # Menggunakan numpy.polyfit untuk mencari garis regresi linear: y = b*x + a
-          coef = np.polyfit(X, Y, 1)  # coef[0] = b (slope), coef[1] = a (intercept)
+        coef = np.polyfit(X, Y, 1)  # coef[0] = b (slope), coef[1] = a (intercept)
           a, b = coef[1], coef[0]     # assign agar lebih mudah dibaca
 
             # Input tahun yang ingin diprediksi
