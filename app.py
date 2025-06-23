@@ -28,7 +28,7 @@ try:
     X = np.array([int(x) for x in years.split(",")])
 
         # Mengubah string input penjualan menjadi array integer
-     Y = np.array([int(y) for y in sales.split(",")])
+    Y = np.array([int(y) for y in sales.split(",")])
 
         # Mengecek apakah panjang data tahun dan penjualan cocok
      if len(X) != len(Y):
