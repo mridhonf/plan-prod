@@ -76,7 +76,7 @@ try:
         ax.axvline(tahun_pred, color='gray', linestyle='--', label='Tahun Prediksi')
 
             # Menandai hasil prediksi dengan garis horizontal
-        ax.axhline(prediksi, final_cost color='green', linestyle=':', label='Prediksi')
+        ax.axhline(prediksi,final_cost color='green', linestyle=':', label='Prediksi')
 
             # Memberi label sumbu dan legend
         ax.set_xlabel("Tahun")
